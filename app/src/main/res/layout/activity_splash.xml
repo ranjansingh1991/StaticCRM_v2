@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="in.semicolonindia.schoolcrm.SplashActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_doodle_bg">
+
+        <LinearLayout
+            android:id="@+id/llHeader"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/ic_launcher_round" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/imgBtnGo"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="44dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/round_solid_primary"
+            android:contentDescription="@null"
+            android:padding="12dp"
+            android:rotation="270"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_arrow_forward_48px" />
+    </FrameLayout>
+</LinearLayout>

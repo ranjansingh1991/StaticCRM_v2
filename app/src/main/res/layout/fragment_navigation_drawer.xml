@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llDrawerParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlDrawerParent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="22dp"
+            android:background="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/imgBtnBack"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="72dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/round_solid_secondary"
+            android:contentDescription="@null"
+            android:padding="12dp"
+            android:rotation="0"
+            app:srcCompat="@drawable/ic_arrow_forward_48px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvVersionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="4dp"
+        android:paddingEnd="6dp"
+        android:layout_marginStart="22dp"
+        android:paddingTop="4dp"
+        android:paddingStart="0dp"
+        android:gravity="end|center"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="12sp" />
+</LinearLayout>

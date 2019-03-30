@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBG"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:text="@string/feedback_title"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvActionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/action"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                tools:ignore="RelativeOverlap">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/rbFeedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:text="@string/feedback"
+                    app:buttonTint="@color/colorPrimary" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/rbEscalation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/escalation"
+                    app:buttonTint="@color/colorPrimary" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/etMsg"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:background="@drawable/bottom_line_light"
+                android:hint="@string/message"
+                android:inputType="textMultiLine"
+                android:maxLength="512"
+                android:padding="8dp"
+                android:text="@string/dummy_text"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="13sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgBtnBack"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/round_solid_secondary"
+                android:contentDescription="@null"
+                android:padding="12dp"
+                android:rotation="180"
+                app:srcCompat="@drawable/ic_arrow_forward_48px" />
+
+            <ImageButton
+                android:id="@+id/imgBtnGo"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/round_solid_primary"
+                android:contentDescription="@null"
+                android:padding="12dp"
+                app:srcCompat="@drawable/ic_arrow_forward_48px" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

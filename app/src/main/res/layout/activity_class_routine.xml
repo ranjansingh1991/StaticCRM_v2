@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBG"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivHeader"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:background="@drawable/routine"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter" />
+
+        <ListView
+            android:id="@+id/lvRoutine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:divider="@color/colorAppBG"
+            android:dividerHeight="1dip"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/stickyView"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDaySun"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/sun"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnDayMon"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAppBG"
+                android:text="@string/mon"
+                android:textColor="@color/colorTextPrimary" />
+
+            <Button
+                android:id="@+id/btnDayTue"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAppBG"
+                android:text="@string/tue"
+                android:textColor="@color/colorTextPrimary" />
+
+            <Button
+                android:id="@+id/btnDayWed"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAppBG"
+                android:text="@string/wed"
+                android:textColor="@color/colorTextPrimary" />
+
+            <Button
+                android:id="@+id/btnDayThu"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAppBG"
+                android:text="@string/thu"
+                android:textColor="@color/colorTextPrimary" />
+
+            <Button
+                android:id="@+id/btnDayFri"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAppBG"
+                android:text="@string/fri"
+                android:textColor="@color/colorTextPrimary" />
+
+            <Button
+                android:id="@+id/btnDaySat"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAppBG"
+                android:text="@string/sat"
+                android:textColor="@color/colorTextPrimary" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="32dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <in.semicolonindia.schoolcrm.widgets.civ.CircleImageView
+                    android:id="@+id/civKidPic"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/tvKidName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/kid_s_name"
+                    android:textColor="@color/colorTextPrimary" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@color/colorSecondary" />
+
+                <Button
+                    android:id="@+id/btnChange"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/change"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+</LinearLayout>

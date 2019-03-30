@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBG">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:id="@+id/rlUserPicParent"
+                android:layout_width="128dp"
+                android:layout_height="212dp">
+
+                <in.semicolonindia.schoolcrm.widgets.civ.CircleImageView
+                    android:id="@+id/civUser"
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/user" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnChangePic"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="56dp"
+                    android:background="@drawable/round_solid_primary"
+                    android:contentDescription="@null"
+                    android:rotation="270"
+                    app:srcCompat="@drawable/ic_arrow_forward_48px" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/etFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bottom_line_light"
+                        android:hint="@string/full_name"
+                        android:inputType="textPersonName"
+                        android:maxLength="32"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:textColor="@color/colorTextPrimary" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bottom_line_light"
+                        android:enabled="false"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="32"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:text="@string/dummy_email"
+                        android:textColor="@color/colorTextPrimary" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_line_light"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/etPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@android:color/transparent"
+                            android:enabled="false"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:maxLength="32"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:text="@string/dummy_password"
+                            android:textColor="@color/colorTextPrimary" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/colorSecondary" />
+
+                    <Button
+                        android:id="@+id/btnPasswordChange"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/ic_arrow_forward_48px"
+                        android:text="@string/change"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/etMobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bottom_line_light"
+                        android:digits="0123456789"
+                        android:hint="@string/mobile_no"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:textColor="@color/colorTextPrimary" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_line_light"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilDOB"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/etDOB"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/bottom_line_light"
+                            android:digits="0123456789"
+                            android:enabled="false"
+                            android:hint="@string/date_of_birth"
+                            android:inputType="text"
+                            android:maxLength="11"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:text="@string/dummy_date"
+                            android:textColor="@color/colorTextPrimary" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/colorSecondary" />
+
+                    <Button
+                        android:id="@+id/btnDOBChange"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/ic_arrow_forward_48px"
+                        android:text="@string/change"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tvGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="@string/gender"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="8dp"
+                        android:orientation="horizontal"
+                        tools:ignore="RelativeOverlap">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/rbMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:text="@string/male"
+                            app:buttonTint="@color/colorPrimary" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/rbFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:layout_marginStart="16dp"
+                            android:text="@string/female"
+                            app:buttonTint="@color/colorPrimary" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/etFullAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:background="@drawable/bottom_line_light"
+                        android:hint="@string/full_address"
+                        android:inputType="textMultiLine"
+                        android:maxLines="4"
+                        android:padding="8dp"
+                        android:text="@string/dummy_text"
+                        android:textColor="@color/colorTextPrimary" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imgBtnBack"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginEnd="24dp"
+                        android:background="@drawable/round_solid_secondary"
+                        android:contentDescription="@null"
+                        android:padding="12dp"
+                        android:rotation="180"
+                        app:srcCompat="@drawable/ic_arrow_forward_48px" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnGo"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="24dp"
+                        android:background="@drawable/round_solid_primary"
+                        android:contentDescription="@null"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/ic_arrow_forward_48px" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ViewFlipper>
+</ScrollView>

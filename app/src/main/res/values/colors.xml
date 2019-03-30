@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4FD2C2</color>
+    <color name="colorSecondary">#C5C7C7</color>
+    <color name="colorPrimaryDark">#A64FD2C2</color>
+    <color name="colorAccent">#FFC5C7C7</color>
+    <color name="colorAppBG">#32E7E7E7</color>
+    <color name="colorTextHint">#A80AD1CC</color>
+    <color name="colorTextPrimary">#A8000000</color>
+    <color name="colorTextSecondary">#FAC5C7C7</color>
+    <color name="black_overlay">#55000000</color>
+    <color name="colorIndicatorFailure">#FFF22F53</color>
+    <color name="colorIndicatorSuccess">#FF2FF27D</color>
+    <color name="colorIndicatorUndefined">#FFC5C7C7</color>
+
+    <!--Related to Maps-->
+    <color name="maingeometrycolor">#EBE1E4E9</color>
+    <color name="adminstartivelabel">#f9f9f9</color>
+    <color name="administativelocality">#f9f9f9</color>
+    <color name="poitext">#81d563</color>
+    <color name="poiparkbackground">#7363d59c</color>
+    <color name="poilabel">#afb7b1</color>
+    <color name="roadbackground">#eba1abba</color>
+    <color name="roadlabel">#9ca5b3</color>
+    <color name="roadarterialbackground">#FF9CCAC5</color>
+    <color name="roadarterialstroke">#FF66B1AC</color>
+    <color name="roadhighway">#85a69c</color>
+    <color name="roadhighwaylabel">#c89cc5f3</color>
+    <color name="roadhighwaystroke">#85a69c</color>
+    <color name="roadlocal">#d6618499</color>
+    <color name="roadlocalstroke">#81acec</color>
+    <color name="transit">#acb5c2</color>
+    <color name="transitstationtext">#bdd1d2</color>
+    <color name="water">#B733B2E1</color>
+    <color name="waterlabel">#c8e1d0</color>
+</resources>
